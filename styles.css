@@ -31,12 +31,37 @@ header {
     margin-left: 20px;
 }
 
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #ff6347
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+    }
+
 h1, h2 {
     color: #333;
 }
 
 footer {
-    background-color: #333;
+    background-color: #ffffff;
     color: white;
     text-align: center;
     padding: 10px 0;
