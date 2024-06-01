@@ -25,6 +25,8 @@ header {
 .nav-links {
     list-style: none;
     display: flex;
+    flex: 1;
+    justify-content: space-evenly;
 }
 
 .nav-links li {
@@ -63,7 +65,7 @@ h1, h2 {
 
 footer {
     background-color: #ffffff;
-    color: rgb(0, 0, 0);
+    color: black;
     text-align: center;
     padding: 10px 0;
     position: relative;
