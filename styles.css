@@ -10,38 +10,31 @@ header {
     padding: 10px 0;
     text-align: center;
 }
-nav {
-    margin: 0 15px;
-    color: white;
-    text-decoration: none;
+.navbar {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    font-family: Arial, sans-serif;
 }
 .container {
-    width: 80%;
-    margin: 0 auto;
-    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
-section {
-    margin-bottom: 40px;
+
+.nav-links {
+    list-style: none;
+    display: flex;
 }
+
+.nav-links li {
+    margin-left: 20px;
+}
+
 h1, h2 {
     color: #333;
 }
-.projects, .skills {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-}
-.project, .skill {
-    background-color: white;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    padding: 20px;
-    width: calc(33% - 40px);
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-}
-.contact {
-    text-align: center;
-}
+
 footer {
     background-color: #333;
     color: white;
