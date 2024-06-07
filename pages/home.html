@@ -9,18 +9,16 @@
 
 <body> 
     <h1>Home </h1>
+    <div id="content"></div>
     <script>
-        function includeHTML()
-            fetch('index.html')
-            .then(response => response.text())
-            .then(html => {
-                const parser = new DOMParser();
-                const doc = parser.parseFromString(html, 'text/html');
-                const content = doc.body.innerHTML;
-                document.getElementById('container').innerHTML = content;
-            });
-        
-        includeHTML();
+        fetch('index.html')
+        .then(response => response.text())
+        .then(html => {
+            const parser = new DOMParser();
+            const doc = parser.parseFromString(html, 'text/html');
+            const content = doc.body.innerHTML;
+            document.getElementById('content').innerHTML = content;
+        })
     </script>
  </body> 
  </html>
