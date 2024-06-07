@@ -10,7 +10,8 @@
 <body> 
     <h1>Home </h1>
     <script>
-        fetch('.../index.html')
+        function includeHTML() {
+            fetch('.../index.html')
             .then(response => response.text())
             .then(data => {
                 const parser = new DOMParser();
@@ -19,6 +20,9 @@
                 document.getElementById('content').innerHTML = indexContent;
             })
             .catch(error => console.error('Error loading content:', error));
+        }
+        
+        includeHTML();
     </script>
  </body> 
  </html>
