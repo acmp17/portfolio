@@ -13,7 +13,7 @@ header {
     color: #fff;
     padding: 10px 20px;
     font-family: Arial, sans-serif;
-    text-align: right;
+    align-items: right;
 }
 .container {
     display: flex;
@@ -63,7 +63,11 @@ section {
     text-align: center;
 }
 
-h1, h2 {
+h1 {
+    color:#fff
+}
+
+h2 {
     color: #333;
 }
 
