@@ -167,7 +167,7 @@
                     <a href="images/AliannaPanganiban_Resume.pdf" download class="button button2">Download Resume</a>
                 </div>
                 <div class="contact-right">
-                    <form>
+                    <form name="submit-to-google-sheet">
                         <input type="text" name="Name" placeholder="Your Name" required>
                         <input type="email" name="Email" placeholder="Your Email" required>
                         <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
@@ -196,5 +196,16 @@
             document.getElementById(tabname).classList.add("active-tab");
         }
     </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwX_FMHzGnYuLmII2kepMLFp_CButwb-_5GBkhcUlOwVJuy_tTUxc8jZUaHfy4DlpvO/exec'
+        const form = document.forms['submit-to-google-sheet']
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => console.log('Success!', response))
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
 </body>
 </html>
