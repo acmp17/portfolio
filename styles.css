@@ -19,14 +19,18 @@ body{
     background-position: center;
 }
 .container{
-    padding: 10px 10%;
+    padding: 5px 10%;
 }
 
 nav{
+    background: #080808;
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
+    width: 85%;
+    position: fixed;
+    z-index: 1000;
 }
 
 .logo{
@@ -99,6 +103,7 @@ nav ul li a:hover::after{
 }
 
 .heading{
+    margin-top: 25px;
     font-size: 60px;
     font-weight: 600;
     color: #fff;
