@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alianna's Personal Portfolio Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap">
+    <script src="https://kit.fontawesome.com/138d9cc64d.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header-project">
+        <div class="container">
+            <nav>
+                <a href="index.html">
+                    <img src="images/logo.png" class="logo">
+                </a>
+                <ul id="navbar">
+                    <li> <a href="#header">Home</a></li>
+                    <li> <a href="#about">About</a></li>
+                    <li> <a href="#services">Services</a></li>
+                    <li> <a href="#portfolio">Portfolio</a></li>
+                    <li> <a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="heading">My Work</h1>
+            <div class="project-list">
+                <div class="project">
+                    <img src="images/artificial-intelligence-project.jpg">
+                    <div class="layer">
+                        <h3>Maximizing Business Opportunities Through Artificial Intelligence</h3>
+                        <p>Identified the potential benefits implementation of Artificial Intelligence and Machine Learning can 
+                            bring to the fashion industry</p>
+                        <div class="external-link">
+                            <a href="#"><img id="external-link" src="images/external-link.png"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="images/visual-intelligence-project.jpg">
+                    <div class="layer">
+                        <h3>Visual Intelligence: A Goal Towards Prevention and A Cure</h3>
+                        <p>Researched for biomarkers in the pupil and their correlation to violent behavior. Created a 
+                            new website to showcase research, implemented ecommerce platform for sponsor's book, and real time chat bot</p>
+                        <div class="external-link">
+                            <a href="#"><img id="external-link" src="images/external-link.png"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="images/app-dev-project.png">
+                    <div class="layer">
+                        <h3>Hoops Prototype</h3>
+                        <p>Transform the way people play recreational basketball. They are able to capture their gameplay, share it,
+                            and receive critical feedback. In order to get creative with playmaking and advance on skill learning,
+                            key moments are highlighted and displayed with suggestions on how to improve</p>
+                        <div class="external-link">
+                            <a href="#"><img id="external-link" src="images/external-link.png"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="button">See More</a>
+        </div>
+    </div>
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="heading"> Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i> acmpng5@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i> 732-781-6533</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter-square"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="images/AliannaPanganiban_Resume.pdf" download class="button button2">Download Resume</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" value="submit" class="button button2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2024 Alianna Panganiban. All rights reserved.</p>
+        </div>
+    </div>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for (tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+</body>
+</html>
