@@ -266,6 +266,10 @@ nav ul li a:hover::after{
     background: #50C878;
 }
 
+iframe{
+    margin-top: 30px;
+}
+
 /* ------------ contact -------------*/
 .contact-left{
     flex-basis: 35%;
