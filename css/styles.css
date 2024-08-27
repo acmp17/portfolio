@@ -378,15 +378,17 @@ nav .fas{
     }
     .headshot{
         width: 180px;
+        margin-left: 80px;
         margin-top: 0;
     }
     .row .col{
         display: grid;
+        align-items: center;
     }
     nav .fas{
         display: block;
         font-size: 25px;
-        margin-right: 40px;
+        margin-right: 20px;
     }
     nav ul{
         background:#50C878;
