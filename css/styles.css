@@ -260,7 +260,11 @@ nav ul li a:hover::after{
 }
 .layer h3{
     font-weight: 500;
+    font-size: 14px;
     margin-bottom: 20px;
+}
+.layer p{
+    font-size: 12px;
 }
 
 .layer a{
