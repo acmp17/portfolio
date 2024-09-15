@@ -413,11 +413,16 @@ nav .fas{
         display: block;
         margin: 25px;
     }
+    nav ul li a{
+        color: white;
+    }
+
     nav ul .fas{
         position: absolute;
         top: 25px;
         left: 25px;
         cursor: pointer;
+        color: white;
     }
     .heading{
         font-size: 40px;
