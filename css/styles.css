@@ -71,6 +71,7 @@ nav ul li a:hover::after{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    align-items: center;
 }
 
 .headshot{
@@ -78,7 +79,9 @@ nav ul li a:hover::after{
     margin-left: 200px;
     margin-top: 100px;
     position: relative;
-    display: grid;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .header-text{
@@ -99,12 +102,6 @@ nav ul li a:hover::after{
     display: flex;
     padding: 80px 0;
     color: black;
-}
-
-.row {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
 }
 
 .about-col-1{
@@ -218,6 +215,9 @@ nav ul li a:hover::after{
 /* ------------ portfolio ----------------*/
 #portfolio{
     padding: 50px 0;   
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .project-list{
