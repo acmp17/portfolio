@@ -82,6 +82,7 @@ nav ul li a:hover::after{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
 }
 
 .header-text{
