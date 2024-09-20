@@ -296,8 +296,53 @@ nav ul li a:hover::after{
     color: white;
 }
 
+/*------------------- project pages --------------*/
+
 iframe{
     margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card{
+    margin-top: 50px;
+}
+
+.card-text p{
+    color: black;
+    font-size: 24px;
+}
+
+.card-text p span{
+    color: #333333; /* Change this to the desired color */
+    font-size: 18px;
+}
+
+.card-img-right{
+    width: 80%;
+    float: right;
+    display: flex;
+}
+
+.challenges-roles-text p {
+    margin-top: 100px;
+    font-size: 18px;
+}
+
+.challenges-roles-text p span{
+    font-size: 32px;
+}
+
+.goals-solution-text p{
+    font-size: 18px;
+    color: white;
+
+}
+
+.goals-solution-text p span{
+    color: #50C878;
+    font-size: 48px;
 }
 
 /* ------------ contact -------------*/
