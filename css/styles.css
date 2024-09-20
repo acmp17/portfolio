@@ -123,7 +123,7 @@ nav ul li a:hover::after{
 }
 
 .heading{
-    margin-top: 25px;
+    margin-top: 100px;
     font-size: 60px;
     font-weight: 600;
     color: #333333;
@@ -469,9 +469,6 @@ nav .fas{
         cursor: pointer;
         color: white;
     }
-    .heading{
-        font-size: 40px;
-    }
     .about-col-1, .about-col-2{
         display: grid;
         flex-basis: 100%;
@@ -514,5 +511,10 @@ nav .fas{
         height: 100%;
         transform: scale(0.2);
         transform-origin:( 0 0);
+    }
+}
+@media (max-width: 1200px) {
+    .layer p {
+        display: none; /* Hide text when the screen width is below 1024px */
     }
 }
