@@ -236,9 +236,13 @@ nav ul li a:hover::after{
 
 .project img{
     width: 100%;
-    height: auto;
+    height: 240px;
     display: block;
     transition: transform 0.5s;
+}
+
+.project i{
+    text-decoration: none;
 }
 
 .layer{
@@ -321,6 +325,12 @@ iframe{
 }
 
 .card-img-right{
+    width: 80%;
+    float: right;
+    display: flex;
+}
+
+.card-img-hoops{
     width: 80%;
     float: right;
     display: flex;
