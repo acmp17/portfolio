@@ -421,6 +421,12 @@ form .button2{
     margin-top: 20px;
 }
 
+/*------------- archives page ---------------*/
+.row .col-lg-4.col-sm-6 .img-container img{
+    display: block;
+    width: 100%;
+}
+
 /*------------- css for small screens ---------------*/
 nav .fas{
     display: none;
