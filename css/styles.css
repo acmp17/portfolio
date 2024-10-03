@@ -422,9 +422,15 @@ form .button2{
 }
 
 /*------------- archives page ---------------*/
+
 .row .col-lg-4.col-sm-6 .img-container img{
+    margin-top: 10px;
     display: block;
     width: 100%;
+}
+
+hr{
+    margin: 50px;
 }
 
 /*------------- css for small screens ---------------*/
