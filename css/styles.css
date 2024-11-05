@@ -427,6 +427,22 @@ form .button2{
     margin-top: 10px;
     display: block;
     width: 100%;
+    transition: transform 0.3s ease;
+}
+
+.row .col-lg-4.col-sm-6 .img-container img:hover {
+    transform: scale(1.05); /* Slightly increase image size on hover */
+}
+
+.carousel-slide,
+.carousel-inner,
+.carousel-item {
+  height: 80vh;
+}
+
+.carousel-item img {
+    object-fit: cover;
+    height: 80vh;
 }
 
 hr{
